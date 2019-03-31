@@ -1,9 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-function startCar() {
-  function keyIgnition() {
+function carIsOn(currentMiles) {
+  let carIsMoving = (drivenMiles) => {
+    return currentMiles + drivenMiles;
   }
+  return carIsMoving;
 }
+let NYCtoMiami = carIsOn(100);
+let BostonToSeattle = carIsOn(100);
+
+console.log(NYCtoMiami(1285));
+console.log(BostonToSeattle(3045));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 

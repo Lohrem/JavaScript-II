@@ -68,6 +68,7 @@ function contains(item, list, cb) {
   cb(items.includes(item, list) ? true : false);
 }
 contains('dinosaur', items, (TF) => console.log(TF));
+
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
